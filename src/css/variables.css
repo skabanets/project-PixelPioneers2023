@@ -1,0 +1,16 @@
+:root {
+  /* Colors*/
+  --primary-cl: #fcf9f9;
+  --secondary-cl: #1c2225;
+  --accent-cl: #ecd979;
+  --light-cl-10: rgba(252, 249, 249, 0.1);
+  --light-cl-40: rgba(252, 249, 249, 0.4);
+  --light-cl-50: rgba(252, 249, 249, 0.5);
+  --light-cl-60: rgba(252, 249, 249, 0.6);
+  --dark-cl-6: rgba(16, 24, 40, 0.06);
+  --dark-cl-2: rgba(18, 20, 23, 0.02);
+  --dark-cl-10: rgba(28, 34, 37, 0.1);
+  --dark-cl-20: rgba(28, 34, 37, 0.2);
+
+  --primary-bg-cl: #1c2225;
+}
