@@ -1,0 +1,72 @@
+/* Header */
+
+.header-wrapper{
+
+}
+
+/* Navigation */
+
+.navigation-wrapper{
+
+}
+
+/* Logo */
+
+.link-logo{
+
+}
+
+/* Pages */
+
+.navigation-pages-list-style{
+display: none;
+}
+
+.navigation-item-style{
+
+}
+
+.link-navigation{
+
+}
+
+/* Contacts */
+
+.number-style{
+    color: var(--primary-cl);
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+/* Social links */
+
+.social-links-list-header{
+display: flex;
+align-items: center;
+}
+
+.item-social-header{
+
+}
+
+.social-link{
+
+}
+
+.custom-svg-social{
+fill: var(--primary-cl);
+}
+
+/* Mobile and tablet menu */
+
+.header-menu{
+background-color: transparent;
+border: none;
+}
+
+/* Image burger menu */
+
+.header-menu-icon{
+stroke: var(--accent-cl);
+}
