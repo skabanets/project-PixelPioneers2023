@@ -1,1 +1,64 @@
-<section></section>
+<section class="your-order-section">
+  <div class="container your-order-container">
+    <div class="your-order-image-container">
+      <img
+        class="your-order-content-img"
+        src="./img/section-your-order/content-img-tablet@1x.jpg"
+        alt="Women dressed in a traditional Ukrainian blouse, face is hidden"
+        width="638"
+        height="521"
+        loading="lazy"
+      />
+    </div>
+    <div class="your-order-content-container">
+      <h2 class="subtitle">
+        <span class="acent-text">Your order</span> is our priority: Personalized
+        approach and quality of service
+      </h2>
+      <form class="your-order-form" name="your-order-form" autocomplete="off">
+        <label class="form-label">
+          <input
+            class="form-input"
+            type="text"
+            name="full_name"
+            required
+            placeholder="Enter your full name"
+            pattern="^\w{3,} \w{3,}"
+            minlength="6"
+            maxlength="32"
+          />
+        </label>
+        <label class="form-label">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+            pattern="^[a-zA-Z]\w+@[a-zA-Z0-9]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$"
+            minlength="6"
+            maxlength="64"
+          />
+        </label>
+        <label class="form-label-comments form-label">
+          <textarea
+            class="input-comments form-input"
+            name="comments"
+            rows="8"
+            required
+            placeholder="Comments"
+          ></textarea>
+        </label>
+        <button
+          class="send-order-btn primary-button btn"
+          type="submit"
+          name="send_order"
+        >
+          Send<svg class="btn-icon-arrow" width="26" height="10">
+            <use href="./img/sprite.svg#icon-arrow-horizontal"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
