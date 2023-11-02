@@ -11,7 +11,7 @@
       />
     </div>
     <div class="your-order-content-container">
-      <h2>
+      <h2 class="subtitle">
         <span class="acent-text">Your order</span> is our priority: Personalized
         approach and quality of service
       </h2>
@@ -40,19 +40,22 @@
             maxlength="64"
           />
         </label>
-        <label class="form-label">
+        <label class="form-label-comments form-label">
           <textarea
-            class="form-input"
+            class="input-comments form-input"
             name="comments"
             rows="8"
             required
             placeholder="Comments"
           ></textarea>
         </label>
-        <button class="btn" type="submit" name="send_order">
-          Send
-          <svg class="btn-icon-arrow" width="26" height="10">
-            <use href="../img/sprite.svg#icon-arrow"></use>
+        <button
+          class="send-order-btn primary-button btn"
+          type="submit"
+          name="send_order"
+        >
+          Send<svg class="btn-icon-arrow" width="26" height="10">
+            <use href="./img/sprite.svg#icon-arrow-horizontal"></use>
           </svg>
         </button>
       </form>
