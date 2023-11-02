@@ -1,7 +1,54 @@
 body {
-  background-color: #1c2225;
+  background-color: var(--primary-bg-cl);
   font-family: 'Manrope', sans-serif;
   font-style: normal;
   font-weight: 400;
+  color: var(--light-cl-40);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* section-title h2 */
+.subtitle {
+  color: var(--primary-cl);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.38;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+/* for highlighted yellow text */
+.acent-text {
+  color: var(--accent-cl);
+}
+
+/* common text styles in section "About-us" and "Testimonials" */
+.ordinary-text {
   color: rgba(252, 249, 249, 0.4);
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* common links styles in heder and footer" */
+.menu-link {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+}
+
+/* common styles for button "Order" and "Send" */
+.primary-button {
+  display: inline-flex;
+  padding: 14px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid var(--light-cl-10);
 }
