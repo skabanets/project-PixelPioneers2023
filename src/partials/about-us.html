@@ -28,15 +28,24 @@
       </li>
     </ul>
     <!-- ABOUT US IMAGE -->
-    <img
-      class="about-img"
-      srcset="
-        ../img/section-about-us/mobile-about-us@1x.jpg 1x,
-        ../img/section-about-us/mobile-about-us@2x.jpg 2x
-      "
-      src="../img/section-about-us/mobile-about-us@1x.jpg"
-      alt="Vyshyvanka"
-      loading="lazy"
-    />
+    <picture>
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/section-about-us/mobile-about-us@1x.jpg 1x,
+          ../img/section-about-us/mobile-about-us@2x.jpg 2x
+        "
+        src="../img/section-about-us/mobile-about-us@1x.jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/section-about-us/tablet-about-us@1x.jpg 1x,
+          ../img/section-about-us/tablet-about-us@2x.jpg 2x
+        "
+        src="../img/section-about-us/tablet-about-us@1x.jpg"
+      />
+      <img class="about-img" alt="Vyshyvanka" loading="lazy" />
+    </picture>
   </div>
 </section>
