@@ -5,6 +5,8 @@
   background-image: url(../img/section-footer/ornament_mob@1x.png);
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
 }
 
 /* @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
@@ -13,17 +15,6 @@
     background-image: url(../img/section-footer/ornament_mob@2x.png);
   }
 } */
-
-.footer::before {
-  content: '';
-  display: block;
-
-  position: absolute;
-  top: 0;
-
-  border-top: 1px solid rgba(252, 249, 249, 0.1);
-  width: 100%;
-}
 
 .footer-menu {
   display: flex;
