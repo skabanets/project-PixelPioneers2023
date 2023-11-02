@@ -75,9 +75,9 @@
 }
 
 .social-link:hover,
-.social-link:focus{
-background-color: #1C2225;
-border: solid #ECD979;   
+.social-link:focus {
+  background-color: #1c2225;
+  border: solid #ecd979;
 }
 
 .custom-svg-social {
