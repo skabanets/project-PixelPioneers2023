@@ -1,17 +1,18 @@
 /* Header */
-
 .header-wrapper {
   display: flex;
-  align-items: center;
-  padding-top: 20px;
+  flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
 /* Navigation */
-
 .navigation-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin: 0;
+  padding: 24px 20px 0 20px;
 }
 
 .navigation-wrapper {
@@ -21,25 +22,22 @@
 }
 
 /* Logo */
-
 .link-logo {
-  margin-left: 20px;
+  margin-left: 0;
 }
 
 /* Pages */
-
 .navigation-pages-list-style {
   display: none;
 }
 
-.navigation-item-style {
-}
-
-.link-navigation {
+.header-elements {
+  display: flex;
+  margin-left: auto;
+  gap: 12px;
 }
 
 /* Contacts */
-
 .number-style {
   color: var(--primary-cl);
   font-size: 14px;
@@ -49,16 +47,11 @@
 }
 
 /* Social links */
-
 .social-links-list-header {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   gap: 12px;
-  margin-left: 87px;
-}
-
-.item-social-header {
 }
 
 .social-link {
@@ -85,7 +78,6 @@
 }
 
 /* Mobile and tablet menu */
-
 .header-menu {
   background-color: transparent;
   border: none;
@@ -93,7 +85,6 @@
 }
 
 /* Image burger menu */
-
 .header-menu-icon {
   width: 100%;
   height: 100%;
