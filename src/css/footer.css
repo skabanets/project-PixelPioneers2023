@@ -7,11 +7,22 @@
   background-position: center bottom;
 }
 
-@media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+/* @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
     background-image: url(../img/section-footer/ornament_mob@2x.png);
   }
+} */
+
+.footer::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 0;
+
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  width: 100%;
 }
 
 .footer-menu {
@@ -37,6 +48,7 @@
   transition: color var(--trans);
 }
 
+.footer-link:hover,
 .footer-link:focus {
   color: var(--accent-cl);
   outline: none;
@@ -50,8 +62,4 @@
   text-align: left;
 
   margin-bottom: 80px;
-}
-
-.footer-title-accent {
-  color: var(--accent-cl);
 }
