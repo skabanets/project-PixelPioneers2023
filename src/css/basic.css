@@ -30,7 +30,7 @@ body {
 
 /* common text styles in section "About-us" and "Testimonials" */
 .ordinary-text {
-  color: rgba(252, 249, 249, 0.4);
+  color: var(--light-cl-40);
   font-size: 14px;
   line-height: normal;
 }
