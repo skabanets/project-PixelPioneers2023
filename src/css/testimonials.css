@@ -45,3 +45,14 @@
     gap: 32px;
   }
 }
+@media (min-width: 1280px) {
+  .testimonials {
+    padding: 150px 0;
+  }
+  .testimonial-3 {
+    display: block;
+  }
+  .testimonials-card-wrapper {
+    gap: 26px;
+  }
+}
