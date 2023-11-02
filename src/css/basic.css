@@ -13,6 +13,26 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 /* section-title h2 */
 .subtitle {
   color: var(--primary-cl);
@@ -21,6 +41,13 @@ body {
   line-height: 1.38;
   letter-spacing: -0.03em;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 44px;
+    line-height: 1.45;
+  }
 }
 
 /* for highlighted yellow text */
@@ -33,6 +60,12 @@ body {
   color: var(--light-cl-40);
   font-size: 14px;
   line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .ordinary-text {
+    font-size: 16px;
+  }
 }
 
 /* common links styles in heder and footer" */
@@ -51,4 +84,11 @@ body {
   gap: 10px;
   border-radius: 15px;
   border: 1px solid var(--light-cl-10);
+}
+
+@media screen and (min-width: 768px) {
+  .primary-button {
+    display: flex;
+    padding: 14px 39px;
+  }
 }
