@@ -10,6 +10,7 @@
   color: var(--primary-cl);
   margin-bottom: 20px;
 }
+
 .hero-btn {
   padding: 14px 36px;
   background-color: transparent;
@@ -92,6 +93,7 @@
     border-radius: 4px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .hero {
     padding-top: 100px;
@@ -114,6 +116,7 @@
     margin-top: 14px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero-container {
     gap: 61px;
