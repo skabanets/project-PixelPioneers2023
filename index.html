@@ -20,14 +20,77 @@
     />
     
     <script type="module" crossorigin src="/project-PixelPioneers2023/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-5f3c5955.css">
+    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-21a2876c.css">
   </head>
   <body>
     <header></header>
 
 
     <main>
-      <section></section>
+      <section class="hero">
+  <div class="container hero-container">
+    <div class="hero-main-content">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Reviving the traditional
+          <span class="acent-text"> Ukrainian </span>
+          artistry in every stitch.
+        </h1>
+        <button class="hero-btn">
+          Order
+          <svg class="hero-btn-svg" width="24" height="16">
+            <use href="../img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ../img/section-hero/desctop1440-and-1280-hero-girl@1x.jpg 1x,
+            ../img/section-hero/desctop1440-and-1280-hero-girl@2x.jpg 2x
+          "
+          width="392"
+          height="545"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../img/section-hero/girl-tablet-hero@1x.jpg 1x,
+            ../img/section-hero/girl-tablet-hero@2x.jpg 2x
+          "
+          width="413"
+          height="575"
+        />
+        <img
+          srcset="
+            ../img/section-hero/girlmobile-hero@1x.jpg 1x,
+            ../img/section-hero/girlmobile-hero@2x.jpg 2x
+          "
+          alt="girl in sweater"
+          width="335"
+          height="545"
+          class="hero-main-img"
+        />
+      </picture>
+    </div>
+
+    <div class="hero-images">
+      <div class="hero-star">
+        <svg width="52" height="51" class="hero-star-svg">
+          <use href="../img/sprite.svg#icon-star"></use>
+        </svg>
+        <p class="hero-star-content">all embroidery is made by hand</p>
+      </div>
+      <img
+        src="../img/section-hero/hero-img@1x.jpg"
+        srcset="../img/section-hero/hero-img@2x.jpg 2x"
+        alt="embroidered shirt"
+        class="hero-embroidered-shirt"
+      />
+    </div>
+  </div>
+</section>
 
       <!-- ABOUT US SECTION -->
 <section class="about-section">
