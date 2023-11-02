@@ -92,4 +92,25 @@
     border-radius: 4px;
   }
 }
-
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 100px;
+  }
+  .hero-container {
+    gap: 15px;
+  }
+  .hero-main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 40px;
+  }
+  .hero-title {
+    margin-top: 94px;
+    padding: 0;
+    width: 518px;
+  }
+  .hero-images {
+    margin-top: 14px;
+  }
+}
