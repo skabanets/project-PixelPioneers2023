@@ -1,7 +1,7 @@
 /* Section content */
 .your-order-section {
   padding-top: 630px;
-  margin-bottom: 85px;
+  padding-bottom: 1px;
 
   background-color: var(--primary-bg-cl);
   background-image: url('../img/section-your-order/bg-img-mobile@1x.jpg');
