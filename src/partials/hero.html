@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container hero-container">
     <div class="hero-main-content">
       <div class="hero-content">
@@ -7,7 +7,7 @@
           <span class="acent-text"> Ukrainian </span>
           artistry in every stitch.
         </h1>
-        <button class="hero-btn">
+        <button class="hero-btn" onclick="scrollToOrder()" type="submit">
           Order
           <svg class="hero-btn-svg" width="24" height="16">
             <use href="./img/sprite.svg#icon-arrow"></use>
@@ -23,8 +23,6 @@
           "
           width="392"
           height="545"
-          loading="lazy"
-
         />
         <source
           media="(min-width: 768px)"
@@ -34,8 +32,6 @@
           "
           width="413"
           height="575"
-          loading="lazy"
-    
         />
         <img
           srcset="
@@ -51,7 +47,6 @@
         />
       </picture>
     </div>
-
     <div class="hero-images">
       <div class="hero-star">
         <svg width="52" height="51" class="hero-star-svg">

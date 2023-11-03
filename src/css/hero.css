@@ -11,6 +11,7 @@
   color: var(--primary-cl);
   margin-bottom: 20px;
 }
+
 .hero-btn {
   padding: 14px 36px;
   background-color: transparent;
@@ -94,3 +95,41 @@
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+  .hero-container {
+    gap: 15px;
+  }
+  .hero-main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 40px;
+  }
+  .hero-title {
+    margin-top: 94px;
+    padding: 0;
+    width: 518px;
+  }
+  .hero-images {
+    margin-top: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    gap: 61px;
+  }
+  .hero-title {
+    margin-top: 66px;
+    font-size: 64px;
+    line-height: 1.15;
+    width: 630px;
+  }
+  .hero-images {
+    margin-top: 66px;
+  }
+}
