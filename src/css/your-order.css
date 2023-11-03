@@ -5,7 +5,13 @@
 */
 .your-order-section {
   overflow: hidden;
-  padding-bottom: 1px;
+  padding: 40px 0;
+}
+/* Tablet view */
+@media only screen and (min-width: 768px) {
+  .your-order-section {
+    padding: 50px 0;
+  }
 }
 .your-order-section::before {
   content: '';
@@ -32,7 +38,6 @@
 @media only screen and (min-width: 768px) {
   .your-order-section::before {
     height: 776px;
-    /* background-color: ; */
     background-image: url('../img/section-your-order/bg-img-tablet@1x.jpg');
   }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
