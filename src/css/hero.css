@@ -98,6 +98,7 @@
 @media screen and (min-width: 1280px) {
   .hero {
     padding-top: 100px;
+    padding-bottom: 75px;
   }
   .hero-container {
     gap: 15px;
@@ -125,8 +126,7 @@
   .hero-title {
     margin-top: 66px;
     font-size: 64px;
-    line-height: 74px;
-    letter-spacing: -1.92px;
+    line-height: 1.15;
     width: 630px;
   }
   .hero-images {
