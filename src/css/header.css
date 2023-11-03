@@ -1,0 +1,94 @@
+/* Header */
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+/* Navigation */
+.navigation-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  max-width: 100%;
+}
+
+.navigation-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Logo */
+.link-logo {
+  margin-left: 0;
+}
+
+/* Pages */
+.navigation-pages-list-style {
+  display: none;
+}
+
+
+.header-elements {
+  display: flex;
+  margin-left: auto;
+  gap: 12px;
+}
+
+/* Contacts */
+.number-style {
+  color: var(--primary-cl);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 20px;
+  display: none;
+}
+
+/* Social links */
+.social-links-list-header {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background-color: rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  border: 1px rgba(252, 249, 249, 0.1) solid;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: #1c2225;
+  border-color: #ecd979;
+}
+
+.custom-svg-social {
+  fill: var(--primary-cl);
+}
+
+/* Mobile and tablet menu */
+.header-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Image burger menu */
+.header-menu-icon {
+  width: 100%;
+  height: 100%;
+  stroke: var(--accent-cl);
+}
