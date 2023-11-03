@@ -13,6 +13,14 @@
   justify-content: flex-start;
   margin: 0;
   padding: 24px 20px 0 20px;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation-box{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .navigation-wrapper {
@@ -37,6 +45,12 @@
   gap: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+  .header-elements{
+   gap: 0;
+  }
+}
+
 /* Contacts */
 .number-style {
   color: var(--primary-cl);
@@ -52,6 +66,12 @@
   align-items: center;
   flex-direction: row;
   gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-links-list-header{
+    margin-right: 20px;
+  }
 }
 
 .social-link {
