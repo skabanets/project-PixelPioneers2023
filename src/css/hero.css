@@ -1,0 +1,42 @@
+.hero {
+  padding-top: 60px;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: -1.32px;
+  color: var(--primary-cl);
+  margin-bottom: 20px;
+}
+.hero-btn {
+  padding: 14px 36px;
+  background-color: transparent;
+  border: 1px solid var(--light-cl-10);
+  color: var(--primary-cl);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 0 40px 70px;
+  transition: border-color var(--trans);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  border-color: var(--accent-cl);
+}
+
+.hero-btn-svg {
+  fill: var(--accent-cl);
+}
+
+.hero-images {
+  display: none;
+}
