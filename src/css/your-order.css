@@ -13,6 +13,12 @@
     padding: 50px 0;
   }
 }
+/* Desktop 1280 view */
+@media only screen and (min-width: 1280px) {
+  .your-order-section {
+    padding: 75px 0;
+  }
+}
 .your-order-section::before {
   content: '';
   display: block;
@@ -21,9 +27,16 @@
 
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
+
+  margin-bottom: 76px;
 }
 /* Mobile view */
+@media only screen and (max-width: 374px) {
+  .your-order-section::before {
+    height: calc(100vw * 1.47);
+  }
+}
 @media only screen and (max-width: 767px) {
   .your-order-section::before {
     background-image: url('../img/section-your-order/bg-img-mobile@1x.jpg');
@@ -38,11 +51,24 @@
 @media only screen and (min-width: 768px) {
   .your-order-section::before {
     height: 776px;
+    margin-bottom: 100px;
     background-image: url('../img/section-your-order/bg-img-tablet@1x.jpg');
   }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
       background-image: url('../img/section-your-order/bg-img-tablet@2x.jpg');
+    }
+  }
+}
+/* Desktop 1280 view */
+@media only screen and (min-width: 1280px) {
+  .your-order-section::before {
+    margin-bottom: 150px;
+    background-image: url('../img/section-your-order/bg-img-desktop1280@1x.jpg');
+  }
+  @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .your-order-section::before {
+      background-image: url('../img/section-your-order/bg-img-desktop1280@2x.jpg');
     }
   }
 }
@@ -53,9 +79,16 @@
   flex-direction: column;
   gap: 100px;
 }
-.your-order-content-container {
-  margin-top: 76px;
+/* Desktop 1280 view */
+@media only screen and (min-width: 1280px) {
+  .your-order-container {
+    padding-left: 64px;
+
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
 }
+
 /* Tablet view */
 @media only screen and (min-width: 768px) {
   .your-order-content-container {
@@ -106,8 +139,30 @@
       background-image: url('../img/section-your-order/bg-img-content@2x.png');
     }
   }
+}
+/* Desktop 1280 view */
+@media only screen and (min-width: 1280px) {
+  .your-order-content-img-container {
+    width: 524px;
+    padding-bottom: 119px;
+  }
+  .your-order-content-img-container::after {
+    left: -320px;
+  }
+}
+
+/* Content image */
+/* Tablet view*/
+@media only screen and (min-width: 768px) {
   .your-order-content-img {
     margin-left: auto;
+  }
+}
+/* Desktop 1280 view */
+@media only screen and (min-width: 1280px) {
+  .your-order-content-img {
+    width: 524px;
+    height: 521px;
   }
 }
 
