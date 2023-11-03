@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/project-PixelPioneers2023/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-79275700.css">
+    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-0058049c.css">
   </head>
   <body>
     <!-- Header -->
@@ -227,17 +227,7 @@
       <section></section>
 
       <section class="your-order-section">
-  <div class="container your-order-container">
-    <div class="your-order-image-container">
-      <img
-        class="your-order-content-img"
-        src="/project-PixelPioneers2023/assets/content-img-tablet@1x-7b92a8e5.jpg"
-        alt="Women dressed in a traditional Ukrainian blouse, face is hidden"
-        width="638"
-        height="521"
-        loading="lazy"
-      />
-    </div>
+  <div id="customer-order" class="container your-order-container">
     <div class="your-order-content-container">
       <h2 class="subtitle">
         <span class="acent-text">Your order</span> is our priority: Personalized
@@ -288,6 +278,20 @@
         </button>
       </form>
     </div>
+    <picture class="your-order-content-img-container">
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-PixelPioneers2023/assets/content-img-tablet@1x-7b92a8e5.jpg 1x, /project-PixelPioneers2023/assets/content-img-tablet@2x-64a16dcf.jpg 2x"
+      />
+      <img
+        class="your-order-content-img"
+        src="/project-PixelPioneers2023/assets/content-img-tablet@1x-7b92a8e5.jpg"
+        alt="Women dressed in a traditional Ukrainian blouse, face is hidden"
+        width="638"
+        height="521"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
 
