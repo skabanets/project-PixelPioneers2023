@@ -1,12 +1,13 @@
 .hero {
   padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .hero-title {
   font-size: 44px;
   font-weight: 400;
-  line-height: 54px;
-  letter-spacing: -1.32px;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
   color: var(--primary-cl);
   margin-bottom: 20px;
 }
@@ -45,6 +46,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 80px;
+    padding-bottom: 50px;
   }
   .hero-container {
     position: relative;
@@ -53,8 +55,7 @@
   }
   .hero-title {
     font-size: 54px;
-    letter-spacing: -1.62px;
-    line-height: 64px;
+    line-height: 1.18;
     margin-bottom: 40px;
     padding-top: 26px;
     width: 549px;

@@ -33,3 +33,15 @@
 .testimonials-card-descr {
   text-align: center;
 }
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 100px 0;
+  }
+  .testimonial-2 {
+    display: block;
+  }
+  .testimonials-card-wrapper {
+    display: flex;
+    gap: 32px;
+  }
+}
