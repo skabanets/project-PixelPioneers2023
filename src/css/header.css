@@ -16,6 +16,13 @@
   max-width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .navigation-box {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .navigation-wrapper {
   display: flex;
   flex-direction: row;
@@ -32,11 +39,16 @@
   display: none;
 }
 
-
 .header-elements {
   display: flex;
   margin-left: auto;
   gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-elements {
+    gap: 0;
+  }
 }
 
 /* Contacts */
@@ -54,6 +66,12 @@
   align-items: center;
   flex-direction: row;
   gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .social-links-list-header {
+    margin-right: 20px;
+  }
 }
 
 .social-link {
