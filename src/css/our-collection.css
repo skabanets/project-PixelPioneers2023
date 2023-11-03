@@ -1,0 +1,47 @@
+.our-collection {
+  background-image: url('./img/section-our-collection/elements-collection-mob.png');
+  background-repeat: no-repeat;
+  background-position: left 0px top 298px;
+  margin-top: 18px;
+  margin-bottom: 80px;
+}
+@media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .our-collection {
+    background-image: url('./img/section-our-collection/elements-collection-mob@2x.png');
+    background-size: 72px 177px;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .our-collection {
+    background-position: left 0px top 240px;
+  }
+}
+
+.top-title-collection {
+  text-align: center;
+}
+.collection-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.collection-ill {
+  margin-bottom: 18px;
+  border-radius: 4px;
+}
+.collection-title {
+  color: var(--primary-cl);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.collection-text {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.7px;
+}
