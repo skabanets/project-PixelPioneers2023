@@ -34,6 +34,7 @@
 
 .header-elements {
   display: flex;
+  align-items: center;
   margin-left: auto;
   gap: 12px;
 }
@@ -100,22 +101,30 @@
 
 @media only screen and (min-width: 768px) {
   .header-menu{
-   max-width: 44px;
-   max-height: 30px;
+   width: 44px;
+   height: 30px;
   }
 }
 
 /* Image burger menu */
 .header-menu-icon{
-  width: 100%;
-  height: 100%;
   stroke: var(--accent-cl);
 }
 
 @media only screen and (min-width: 768px) {
   .header-menu-icon{
-   width: 44px;
-   height: 30px;
+   display: none;
+  }
+}
+
+.header-menu-icon-tablet{
+  display: none;
+  stroke: var(--accent-cl);
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu-icon-tablet{
+   display: flex;
   }
 }
 
