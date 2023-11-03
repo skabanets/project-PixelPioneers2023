@@ -10,7 +10,7 @@
         <button class="hero-btn">
           Order
           <svg class="hero-btn-svg" width="24" height="16">
-            <use href="../img/sprite.svg#icon-arrow"></use>
+            <use href="./img/sprite.svg#icon-arrow"></use>
           </svg>
         </button>
       </div>
@@ -18,30 +18,36 @@
         <source
           media="(min-width: 1280px)"
           srcset="
-            ../img/section-hero/desctop1440-and-1280-hero-girl@1x.jpg 1x,
-            ../img/section-hero/desctop1440-and-1280-hero-girl@2x.jpg 2x
+            ./img/section-hero/desctop1440-and-1280-hero-girl@1x.jpg 1x,
+            ./img/section-hero/desctop1440-and-1280-hero-girl@2x.jpg 2x
           "
           width="392"
           height="545"
+          loading="lazy"
+
         />
         <source
           media="(min-width: 768px)"
           srcset="
-            ../img/section-hero/girl-tablet-hero@1x.jpg 1x,
-            ../img/section-hero/girl-tablet-hero@2x.jpg 2x
+            ./img/section-hero/girl-tablet-hero@1x.jpg 1x,
+            ./img/section-hero/girl-tablet-hero@2x.jpg 2x
           "
           width="413"
           height="575"
+          loading="lazy"
+    
         />
         <img
           srcset="
-            ../img/section-hero/girlmobile-hero@1x.jpg 1x,
-            ../img/section-hero/girlmobile-hero@2x.jpg 2x
+            ./img/section-hero/girlmobile-hero@1x.jpg 1x,
+            ./img/section-hero/girlmobile-hero@2x.jpg 2x
           "
+          src="./img/section-hero/girlmobile-hero@1x.jpg"
           alt="girl in sweater"
           width="335"
           height="545"
           class="hero-main-img"
+          loading="lazy"
         />
       </picture>
     </div>
@@ -49,15 +55,16 @@
     <div class="hero-images">
       <div class="hero-star">
         <svg width="52" height="51" class="hero-star-svg">
-          <use href="../img/sprite.svg#icon-star"></use>
+          <use href="./img/sprite.svg#icon-star"></use>
         </svg>
         <p class="hero-star-content">all embroidery is made by hand</p>
       </div>
       <img
-        src="../img/section-hero/hero-img@1x.jpg"
-        srcset="../img/section-hero/hero-img@2x.jpg 2x"
+        src="./img/section-hero/hero-img@1x.jpg"
+        srcset="./img/section-hero/hero-img@2x.jpg 2x"
         alt="embroidered shirt"
         class="hero-embroidered-shirt"
+        loading="lazy"
       />
     </div>
   </div>
