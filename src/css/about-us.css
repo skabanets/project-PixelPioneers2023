@@ -1,19 +1,32 @@
 /* ABOUT US SECTION */
 
 .about-section {
-    padding: 80px 0;
+    padding: 40px 0 80px 0;
     background-color: var(--secondary-cl);
-    background-image: url(../img/section-about-us/elements-mobile.png);
+    background-image: url(../img/section-about-us/elements-mobile@1x.png);
     background-repeat: no-repeat;
-    background-position: right 0px bottom 18px;
-    background-size: auto auto;
+    background-position: left calc(50% + 167px) bottom 18px;
+    background-size: 459px 408px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .about-section {
+        background-image: url(../img/section-about-us/elements-mobile@2x.png);
+    }
 }
 
 @media screen and (min-width: 768px) {
     .about-section{
-        padding: 100px 0;
-        background-image: url(../img/section-about-us/elements-tablet.png);
-        background-position: right 0px bottom 56px;
+        padding: 50px 0 100px 0;
+        background-image: url(../img/section-about-us/elements-tablet@1x.png);
+        background-position: left calc(50% + 288px) bottom 50px;
+        background-size: 545px 484px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .about-section {
+            background-image: url(../img/section-about-us/elements-tablet@2x.png);
+        }
     }
 }
 
