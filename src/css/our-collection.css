@@ -1,19 +1,18 @@
 .our-collection {
-  background-image: url('./img/section-our-collection/elements-collection-mob.png');
+  background-image: url('../img/section-our-collection/elements-collection@1x.png');
   background-repeat: no-repeat;
-  background-position: left 0px top 298px;
-  margin-top: 18px;
-  margin-bottom: 80px;
+  background-position: top 316px left calc(50% - 220px);
+  padding: 40px 0;
+  background-size: 199px 177px;
 }
 @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .our-collection {
-    background-image: url('./img/section-our-collection/elements-collection-mob@2x.png');
-    background-size: 72px 177px;
+    background-image: url('../img/section-our-collection/elements-collection@2x.png');
   }
 }
 @media only screen and (max-width: 374px) {
   .our-collection {
-    background-position: left 0px top 240px;
+    background-position: top 280px left calc(50% - 220px);
   }
 }
 
