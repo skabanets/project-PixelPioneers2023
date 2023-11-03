@@ -70,7 +70,7 @@
 .social-link:hover,
 .social-link:focus {
   background-color: #1c2225;
-  border: solid #ecd979;
+  border-color: #ecd979;
 }
 
 .custom-svg-social {
