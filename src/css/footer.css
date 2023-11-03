@@ -5,16 +5,42 @@
   background-image: url(../img/section-footer/ornament_mob@1x.png);
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 375px 212px;
 
   border-top: 1px solid rgba(252, 249, 249, 0.1);
 }
 
-/* @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+@media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
     background-image: url(../img/section-footer/ornament_mob@2x.png);
   }
-} */
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    min-height: 0;
+    padding-bottom: 40px;
+
+    background-image: url(../img/section-footer/ornament@1x.png);
+    background-repeat: no-repeat;
+    background-position: top 53% left calc(50% + 434px);
+    background-size: 452px 401px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-image: url(../img/section-footer/ornament@1x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../img/section-footer/ornament@2x.png);
+  }
+}
 
 .footer-menu {
   display: flex;
@@ -25,8 +51,20 @@
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-menu {
+    margin-bottom: 80px;
+  }
+}
+
 .footer-item:first-child {
   margin-right: 49px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-item:first-child {
+    margin-right: 0;
+  }
 }
 
 .footer-link {
@@ -53,4 +91,13 @@
   text-align: left;
 
   margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 54px;
+    line-height: 1.186;
+
+    width: 521px;
+  }
 }
