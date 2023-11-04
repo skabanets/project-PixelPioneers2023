@@ -77,12 +77,6 @@
   }
 }
 
-.about-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .about-text {
   letter-spacing: -0.04em;
 }
@@ -99,7 +93,7 @@
   }
 }
 
-.first-paragraf {
+.first-p{
   margin-bottom: 20px;
 }
 
