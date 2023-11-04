@@ -40,6 +40,19 @@
   }
 }
 
+@media only screen and (min-width: 1280px) {
+  .footer {
+    background-size: 595px 528px;
+    background-position: top 40% left calc(50% + 603px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    background-position: top 40% left calc(50% + 518px);
+  }
+}
+
 .footer-menu-wrap {
   display: flex;
   gap: 40px;
@@ -50,6 +63,12 @@
   .footer-menu-wrap {
     gap: 25px;
     margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-menu-wrap {
+    margin-bottom: 117px;
   }
 }
 
@@ -107,5 +126,14 @@
     line-height: 1.186;
 
     width: 521px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-title {
+    font-size: 64px;
+    line-height: 1.16;
+
+    width: 754px;
   }
 }
