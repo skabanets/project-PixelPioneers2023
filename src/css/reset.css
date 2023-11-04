@@ -41,3 +41,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.scroll-hiden {
+  overflow: hidden;
+}

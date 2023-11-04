@@ -7,13 +7,30 @@
   width: 274px;
   height: 100vh;
   background-color: var(--accent-cl);
-  z-index: 999;
+  z-index: 2;
   transform: translateX(100%);
   transition: transform var(--trans);
 }
 
+@media screen and (min-width: 768px) {
+  .sidebar-menu-container {
+    width: 380px;
+  }
+}
+
 .sidebar-menu-container.is-open {
   transform: translateX(0);
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
 }
 
 .sidebar-elements {
@@ -32,7 +49,6 @@
   font-style: normal;
   font-size: 12px;
   line-height: 1.17;
-  text-transform: uppercase;
   width: 100%;
   height: 100%;
   padding: 12px 20px;
@@ -41,6 +57,13 @@
   width: fit-content;
   background-color: transparent;
   transition: border-color var(--trans);
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-menu-number {
+    font-size: 14px;
+    line-height: 1.43;
+  }
 }
 
 .sidebar-menu-number:hover,
@@ -61,6 +84,13 @@
   stroke: var(--secondary-cl);
 }
 
+@media screen and (min-width: 768px) {
+  .x-close-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
 .sidebar-menu-wrapper {
   display: flex;
   justify-content: flex-end;
@@ -76,12 +106,18 @@
   align-items: flex-end;
 }
 
+@media screen and (min-width: 768px) {
+  .sidebar-menu {
+    gap: 25px;
+  }
+}
+
 .sidebar-menu-link {
   color: var(--secondary-cl);
 }
 
 .sidebar-ornament {
-  background-image: url(../img/sidebar-menu/menu-ornament-mob@1x.png);
+  background-image: url(../img/sidebar-menu/menu-ornament_mob@1x.png);
   width: 100%;
   height: 252px;
   background-size: cover;
@@ -90,6 +126,20 @@
 @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .sidebar-ornament {
-    background-image: url(../img/sidebar-menu/menu-ornament-mob@2x.png);
+    background-image: url(../img/sidebar-menu/menu-ornament_mob@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar-ornament {
+    background-image: url(../img/sidebar-menu/menu-ornament_tab@1x.png);
+    height: 364px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (min-device-pixel-ratio: 2),
+  (min-width: 767px) and (min-resolution: 192dpi) {
+  .sidebar-ornament {
+    background-image: url(../img/sidebar-menu/menu-ornament_tab@2x.png);
   }
 }

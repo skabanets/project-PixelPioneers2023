@@ -5,22 +5,27 @@ function scrollToOrder() {
     .scrollIntoView({ behavior: 'smooth' });
 }
 
+console.log('Hello');
+
 // sidebar-menu
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const backdrop = document.querySelector('.backdrop');
 
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    backdrop.classList.toggle('is-hidden');
+    document.body.classList.toggle('scroll-hiden');
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    // const scrollLockMethod = !isMenuOpen
+    //   ? 'disableBodyScroll'
+    //   : 'enableBodyScroll';
+    // bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -32,5 +37,6 @@ function scrollToOrder() {
     mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+    backdrop.classList.toggle('is-hidden');
   });
 })();
