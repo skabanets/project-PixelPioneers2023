@@ -125,6 +125,18 @@
 }
 
 /* Mobile and tablet menu */
+.header-menu {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu{
+   width: 44px;
+   height: 30px;
+  }
+}
 /* Image burger menu */
 .header-menu-icon{
   stroke: var(--accent-cl);
