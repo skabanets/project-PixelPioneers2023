@@ -50,10 +50,12 @@
 
 .header-elements {
   display: flex;
+  align-items: center;
   margin-left: auto;
   align-items: center;
   gap: 12px;
 }
+
 
 @media only screen and (min-width: 1280px) {
   .header-elements {
@@ -98,6 +100,12 @@
   gap: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+  .social-links-list-header {
+    margin-right: 20px;
+  }
+}
+
 .social-link {
   padding: 8px;
   background-color: rgba(252, 249, 249, 0.1);
@@ -133,6 +141,7 @@
    height: 30px;
   }
 }
+
 /* Image burger menu */
 .header-menu-icon{
   stroke: var(--accent-cl);

@@ -2,31 +2,96 @@
   min-height: 100vh;
   padding-top: 40px;
 
-  background-image: url(../img/section-footer/ornament_mob@1x.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background-image: url(../img/section-footer/ornament@1x.png);
+  background-repeat: repeat no-repeat;
+  background-position: center top calc(50% + 326px);
+  background-size: 452px 401px;
 
   border-top: 1px solid rgba(252, 249, 249, 0.1);
 }
 
-/* @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+@media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
-    background-image: url(../img/section-footer/ornament_mob@2x.png);
+    background-image: url(../img/section-footer/ornament@2x.png);
   }
-} */
+}
 
-.footer-menu {
+@media only screen and (min-width: 768px) {
+  .footer {
+    min-height: 0;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+
+    background-position: top 53% left calc(50% + 434px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-image: url(../img/section-footer/ornament@1x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .footer {
+    background-image: url(../img/section-footer/ornament@2x.png);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer {
+    background-size: 595px 528px;
+    background-position: top 40% left calc(50% + 603px);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    background-position: top 40% left calc(50% + 518px);
+  }
+}
+
+.footer-menu-wrap {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 25px;
-
+  gap: 40px;
   margin-bottom: 40px;
 }
 
-.footer-item:first-child {
+@media only screen and (min-width: 768px) {
+  .footer-menu-wrap {
+    gap: 25px;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-menu-wrap {
+    margin-bottom: 117px;
+  }
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-menu {
+    flex-direction: row;
+  }
+}
+
+.footer-item-margin {
   margin-right: 49px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-item-margin {
+    margin-right: 0;
+  }
 }
 
 .footer-link {
@@ -53,4 +118,22 @@
   text-align: left;
 
   margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-title {
+    font-size: 54px;
+    line-height: 1.186;
+
+    width: 521px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-title {
+    font-size: 64px;
+    line-height: 1.16;
+
+    width: 754px;
+  }
 }
