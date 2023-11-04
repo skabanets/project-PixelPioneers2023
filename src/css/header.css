@@ -125,20 +125,24 @@
 }
 
 /* Mobile and tablet menu */
-.header-menu {
-  background-color: transparent;
-  border: none;
-  padding: 0;
+/* Image burger menu */
+.header-menu-icon{
+  stroke: var(--accent-cl);
 }
 
-@media only screen and (min-width: 1280px) {
-  .header-menu{
-    display: none;
+@media only screen and (min-width: 768px) {
+  .header-menu-icon{
+   display: none;
   }
 }
 
-/* Image burger menu */
-.header-menu-icon {
-  height: 100%;
+.header-menu-icon-tablet{
+  display: none;
   stroke: var(--accent-cl);
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu-icon-tablet{
+   display: flex;
+  }
 }
