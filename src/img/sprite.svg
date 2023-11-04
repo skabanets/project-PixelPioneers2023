@@ -19,9 +19,6 @@
     <symbol id="icon-arrow-horizontal" viewBox="0 0 79 32">
       <path d="M58.838 30.545c1.093-2.652 2.15-4.973 3.17-6.962 1.093-1.989 2.15-3.647 3.17-4.973h-63.722v-5.221h63.722c-1.020-1.409-2.077-3.108-3.17-5.097-1.020-1.989-2.077-4.268-3.17-6.838h3.826c4.591 6.050 9.4 10.526 14.428 13.427v2.238c-5.028 2.818-9.837 7.293-14.428 13.427h-3.826z"/>
     </symbol>
-    <symbol id="icon-nav-menu" viewBox="0 0 32 32">
-      <path stroke-linecap="round" stroke-width="2.182" d="M5.961 8.628H30.91M5.961 21.851H30.91M13.613 15.24h17.296"/>
-    </symbol>
     <symbol id="icon-close" viewBox="0 0 32 32">
       <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2.182" d="M24 8 8 24M8 8l16 16"/>
     </symbol>
