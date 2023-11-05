@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
