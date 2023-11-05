@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-43209973.css">
+    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-9916d6f3.css">
   </head>
   <body>
     <!-- Header -->
@@ -50,8 +50,8 @@
 
     <div class="header-elements">
       <!-- Contacts -->
-      <address>
-        <a href="+380684439426" class="number-style">+380 (68) 443-94-26</a>
+      <address class="header-contacts">
+        <a href="tel:+380684439426" class="number-style">+380 (68) 443-94-26</a>
       </address>
 
       <!-- Social links -->
@@ -99,6 +99,7 @@
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
+        data-modal-open
       >
         <!-- Image burger menu -->
         <svg class="header-menu-icon" width="36" height="24">
@@ -578,15 +579,15 @@
 </footer>
 
 
-    <div class="backdrop is-hidden">
-  <div class="sidebar-menu-container js-menu-container" id="mobile-menu">
+    <div class="backdrop is-hidden" data-modal>
+  <div class="sidebar-menu-container js-menu-container is-close" id="mobile-menu">
     <div class="sidebar-elements">
       <address>
         <a href="tel:+380684439426" class="sidebar-menu-number"
           >+380 (68) 443-94-26</a
         >
       </address>
-      <button class="menu-toggle js-close-menu" type="button">
+      <button class="menu-toggle js-close-menu" type="button" data-modal-close>
         <svg class="x-close-icon" width="36" height="36">
           <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-close"></use>
         </svg>
