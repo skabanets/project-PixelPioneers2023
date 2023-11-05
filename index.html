@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS - Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom styles -->
     
     <script type="module" crossorigin src="/project-PixelPioneers2023/commonHelpers.js"></script>
     <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-7fdeddb8.css">
@@ -233,7 +236,12 @@
   <div class="container our-collection-container">
     <h2 class="subtitle top-title-collection">Our collection</h2>
     <ul class="collection-list">
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -266,7 +274,12 @@
         <h3 class="collection-title">AUGUST Poltava women's blousering</h3>
         <p class="collection-text">3300 UAH</p>
       </li>
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -294,7 +307,12 @@
         <h3 class="collection-title">Women's blouse Gorgany</h3>
         <p class="collection-text">3350 UAH</p>
       </li>
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -322,7 +340,12 @@
         <h3 class="collection-title">Women's blouse Crimea</h3>
         <p class="collection-text">4000 UAH</p>
       </li>
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -350,7 +373,12 @@
         <h3 class="collection-title">Men's shirt Verkhovina</h3>
         <p class="collection-text">3100 UAH</p>
       </li>
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -378,7 +406,12 @@
         <h3 class="collection-title">Mountain men's shirt</h3>
         <p class="collection-text">3300 UAH</p>
       </li>
-      <li class="collection-iteam">
+      <li
+        class="collection-iteam"
+        data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-duration="1000"
+      >
         <picture>
           <!-- Desktop screen(1440px) -->
           <source
@@ -625,6 +658,13 @@
 </div>
 
 
+    <!-- AOS scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     
   </body>
 </html>
