@@ -52,11 +52,13 @@
   .your-order-section::before {
     height: 776px;
     margin-bottom: 100px;
-    background-image: url('../img/section-your-order/bg-img-tablet@1x.jpg');
+    background-image: url('../img/section-your-order/bg-transp-image-tablet@1x.png'),
+      linear-gradient(170deg, #ccd1cd, #eaeeef);
   }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
-      background-image: url('../img/section-your-order/bg-img-tablet@2x.jpg');
+      background-image: url('../img/section-your-order/bg-transp-image-tablet@2x.png'),
+        linear-gradient(170deg, #ccd1cd, #eaeeef);
     }
   }
 }
@@ -64,11 +66,26 @@
 @media only screen and (min-width: 1280px) {
   .your-order-section::before {
     margin-bottom: 150px;
-    background-image: url('../img/section-your-order/bg-img-desktop1280@1x.jpg');
+    background-image: url('../img/section-your-order/bg-transp-image-desk1280@1x.png'),
+      linear-gradient(170deg, #ccd1cd, #eaeeef);
   }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
-      background-image: url('../img/section-your-order/bg-img-desktop1280@2x.jpg');
+      background-image: url('../img/section-your-order/bg-transp-image-desk1280@2x.png'),
+        linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+  }
+}
+/* Desktop 1440 view */
+@media only screen and (min-width: 1440px) {
+  .your-order-section::before {
+    background-image: url('../img/section-your-order/bg-transp-image-desk1440@1x.png'),
+      linear-gradient(170deg, #ccd1cd, #eaeeef);
+  }
+  @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .your-order-section::before {
+      background-image: url('../img/section-your-order/bg-transp-image-desk1440@2x.png'),
+        linear-gradient(170deg, #ccd1cd, #eaeeef);
     }
   }
 }
@@ -88,11 +105,23 @@
     gap: 50px;
   }
 }
+/* Desktop 1440 view */
+@media only screen and (min-width: 1440px) {
+  .your-order-container {
+    padding-left: 100px;
+  }
+}
 
 /* Tablet view */
 @media only screen and (min-width: 768px) {
   .your-order-content-container {
     width: 542px;
+  }
+}
+/* Desktop 1440 view */
+@media only screen and (min-width: 1440px) {
+  .your-order-content-container {
+    width: 666px;
   }
 }
 
@@ -175,6 +204,12 @@
   .your-order-form {
     padding-right: 34px;
     text-align: left;
+  }
+}
+/* Desktop 1440 view */
+@media only screen and (min-width: 1440px) {
+  .your-order-form {
+    padding-right: 158px;
   }
 }
 
