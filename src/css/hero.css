@@ -19,7 +19,7 @@
   color: var(--primary-cl);
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: -0.56px;
+  letter-spacing: -0.04em;
   text-transform: uppercase;
   border-radius: 15px;
   display: flex;
@@ -83,7 +83,7 @@
     text-align: center;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: -0.64px;
+    letter-spacing: -0.04em;
   }
   .hero-embroidered-shirt {
     position: absolute;

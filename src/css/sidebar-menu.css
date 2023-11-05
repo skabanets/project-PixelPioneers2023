@@ -8,7 +8,6 @@
   height: 100vh;
   background-color: var(--accent-cl);
   z-index: 2;
-    
   transform: translateX(100%);
   /* transition: transform var(--trans); */
   transition: transform 0.5s ease;
@@ -23,7 +22,7 @@
   transform: translateX(0);
 }
 
-.is-close{
+.is-close {
   transform: translateX(100%);
 }
 
@@ -36,7 +35,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
-  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sidebar-elements {
