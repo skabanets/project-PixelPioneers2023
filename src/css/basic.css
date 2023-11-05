@@ -92,8 +92,24 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  color: var(--primary-cl);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
   border-radius: 15px;
   border: 1px solid var(--light-cl-10);
+  background-color: transparent;
+  transition: border-color var(--trans);
+}
+.primary-button:hover,
+.primary-button:focus {
+  border-color: var(--accent-cl);
+}
+.primary-button-icon {
+  fill: var(--accent-cl);
 }
 
 @media screen and (min-width: 768px) {
