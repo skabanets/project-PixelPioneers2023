@@ -15,12 +15,14 @@ console.log('Hello');
   const backdrop = document.querySelector('.backdrop');
 
   const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    mobileMenu.classList.toggle('is-close');
     backdrop.classList.toggle('is-hidden');
     document.body.classList.toggle('scroll-hiden');
+
+ 
 
     // const scrollLockMethod = !isMenuOpen
     //   ? 'disableBodyScroll'
