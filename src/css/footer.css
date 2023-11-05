@@ -1,12 +1,10 @@
 .footer {
   min-height: 100vh;
   padding-top: 40px;
-
   background-image: url(../img/section-footer/ornament@1x.png);
   background-repeat: repeat no-repeat;
   background-position: center top calc(50% + 326px);
   background-size: 452px 401px;
-
   border-top: 1px solid rgba(252, 249, 249, 0.1);
 }
 
@@ -22,7 +20,6 @@
     min-height: 0;
     padding-bottom: 40px;
     background-repeat: no-repeat;
-
     background-position: top 53% left calc(50% + 434px);
   }
 }
@@ -96,11 +93,9 @@
 
 .footer-link {
   color: var(--primary-cl);
-
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
-
   transition: color var(--trans);
 }
 
@@ -116,7 +111,6 @@
   line-height: 1.23;
   letter-spacing: -0.03em;
   text-align: left;
-
   margin-bottom: 80px;
 }
 
@@ -124,7 +118,6 @@
   .footer-title {
     font-size: 54px;
     line-height: 1.186;
-
     width: 521px;
   }
 }
@@ -133,7 +126,6 @@
   .footer-title {
     font-size: 64px;
     line-height: 1.16;
-
     width: 754px;
   }
 }
