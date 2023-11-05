@@ -13,30 +13,7 @@
 }
 
 .hero-btn {
-  padding: 14px 36px;
-  background-color: transparent;
-  border: 1px solid var(--light-cl-10);
-  color: var(--primary-cl);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   margin: 0 0 40px 70px;
-  transition: border-color var(--trans);
-}
-
-.hero-btn:hover,
-.hero-btn:focus {
-  border-color: var(--accent-cl);
-}
-
-.hero-btn-svg {
-  fill: var(--accent-cl);
 }
 
 .hero-images {
@@ -62,7 +39,6 @@
   }
   .hero-btn {
     margin: 0 0 40px 140px;
-    padding: 14px 39px;
   }
   .hero-images {
     display: block;
