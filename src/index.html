@@ -18,6 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS - Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -35,6 +38,13 @@
 
     <load src="partials/sidebar-menu.html" />
 
+    <!-- AOS scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
