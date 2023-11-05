@@ -15,14 +15,13 @@ console.log('Hello');
   const backdrop = document.querySelector('.backdrop');
 
   const toggleMenu = () => {
-    const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
     mobileMenu.classList.toggle('is-close');
     backdrop.classList.toggle('is-hidden');
     document.body.classList.toggle('scroll-hiden');
-
- 
 
     // const scrollLockMethod = !isMenuOpen
     //   ? 'disableBodyScroll'
@@ -32,6 +31,13 @@ console.log('Hello');
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // close-sidebar before folowing link
+  mobileMenu.addEventListener('click', e => {
+    if (e.target.hasAttribute('data-sidebar')) {
+      toggleMenu();
+    }
+  });
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
