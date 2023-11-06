@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project-PixelPioneers2023/assets/favicon-2db71a3a.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reviving the traditional Ukrainian artistry in every stitch."
+    />
     <title>Vyshyvanka Vibes</title>
     <link
       rel="stylesheet"
@@ -23,7 +27,7 @@
     <!-- Custom styles -->
     
     <script type="module" crossorigin src="/project-PixelPioneers2023/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-d3b7272e.css">
+    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-1fe75f92.css">
   </head>
   <body>
     <!-- Header -->
@@ -33,7 +37,12 @@
     <nav class="navigation-wrapper">
       <!-- Logo -->
       <a href="./index.html">
-        <img src="/project-PixelPioneers2023/assets/logo-72d213b5.svg" alt="logo-company" />
+        <img
+          src="/project-PixelPioneers2023/assets/logo-72d213b5.svg"
+          alt="logo-company"
+          width="44"
+          height="39"
+        />
       </a>
       <!-- Pages -->
       <ul class="navigation-pages-list-style">
@@ -65,6 +74,7 @@
             href="https://www.facebook.com/goITclub/"
             target="_blank"
             class="social-link"
+            aria-label="facebook GoIT"
           >
             <svg class="custom-svg-social" width="28" height="28">
               <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-facebook"></use>
@@ -77,6 +87,7 @@
             href="https://www.instagram.com/goitclub/"
             target="_blank"
             class="social-link"
+            aria-label="instagram GoIT"
           >
             <svg class="custom-svg-social" width="28" height="28">
               <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-instagram"></use>
@@ -89,6 +100,7 @@
             href="https://www.youtube.com/c/GoIT"
             target="_blank"
             class="social-link"
+            aria-label="youtube GoIT"
           >
             <svg class="custom-svg-social" width="28" height="28">
               <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-youtube"></use>
@@ -102,7 +114,8 @@
         class="header-menu js-open-menu"
         type="button"
         aria-expanded="false"
-        aria-controls="mobile-menu"
+        aria-controls="modal menu"
+        aria-label="button burger menu"
         data-modal-open
       >
         <!-- Image burger menu -->
@@ -129,10 +142,7 @@
           <span class="acent-text"> Ukrainian </span>
           artistry in every stitch.
         </h1>
-        <button
-          class="hero-btn primary-button"
-          type="submit"
-        >
+        <button class="hero-btn primary-button" type="submit">
           Order
           <svg class="primary-button-icon" width="24" height="16">
             <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-arrow"></use>
@@ -159,7 +169,6 @@
           width="335"
           height="545"
           class="hero-main-img"
-          loading="lazy"
         />
       </picture>
     </div>
