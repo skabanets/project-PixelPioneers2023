@@ -243,7 +243,7 @@
   color: var(--primary-cl);
   font-size: 14px;
   line-height: normal;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
 
   width: 100%;
   height: 47px;

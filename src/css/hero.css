@@ -3,7 +3,7 @@
   padding-bottom: 40px;
 }
 
-.hero-content{
+.hero-content {
   margin-bottom: 40px;
 }
 
@@ -103,6 +103,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 170px;
+    padding-bottom: 75px;
+  }
   .hero-container {
     gap: 61px;
   }

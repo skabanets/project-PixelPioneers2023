@@ -37,6 +37,7 @@
 @media only screen and (min-width: 1280px) {
   .our-collection {
     background-position: top 221px left calc(50% - 643px);
+    padding-bottom: 75px;
   }
 }
 

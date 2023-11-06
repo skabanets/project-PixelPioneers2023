@@ -1,6 +1,5 @@
 .footer {
-  min-height: 100vh;
-  padding-top: 40px;
+  padding: 40px 0 280px 0;
   background-image: url(../img/section-footer/ornament@1x.png);
   background-repeat: repeat no-repeat;
   background-position: center top calc(50% + 326px);
