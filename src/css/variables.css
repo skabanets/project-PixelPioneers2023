@@ -11,6 +11,10 @@
 
   --primary-bg-cl: #1c2225;
 
+  /* Form validation */
+  --error-cl: #862b17;
+  --success-cl: #637b65;
+
   /* Transition */
   --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
