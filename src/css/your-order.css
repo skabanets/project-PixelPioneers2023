@@ -363,7 +363,7 @@
 
   top: 14px;
   left: 16px;
-  transition: 0.2s ease;
+  transition: transform 0.2s ease;
   background-color: var(--secondary-cl);
   padding: 0 2px;
   z-index: 1111;
