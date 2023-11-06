@@ -236,7 +236,6 @@
   display: block;
   margin-bottom: 20px;
   position: relative;
-  overflow: hidden;
 }
 
 .form-input {
@@ -264,14 +263,42 @@
   }
 }
 
-.form-input::placeholder {
-  color: var(--light-cl-50);
+.form-label-name {
+  position: absolute;
+
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.02em;
+
+  top: 14px;
+  left: 16px;
+  transition: 0.2s ease;
+  background-color: var(--secondary-cl);
+  padding: 0 2px;
+  z-index: 1111;
 }
 
-.form-input:focus {
+@media only screen and (min-width: 768px) {
+  .form-label-name {
+    font-size: 16px;
+  }
+}
+
+.form-input:focus,
+.form-input:valid {
   outline: none;
   border-color: var(--light-cl-60);
 }
+
+.form-label-wrap {
+  position: relative;
+}
+
+.form-input:focus + .form-label-name,
+.form-input:valid + .form-label-name {
+  transform: translate(14px, -24px);
+}
+
 /* Validation */
 .form-input:not(:placeholder-shown):required:invalid {
   border-color: var(--error-cl);
@@ -287,6 +314,14 @@
     transform var(--trans);
 
   position: relative;
+}
+
+.form-input:not(:placeholder-shown):required:invalid ~ .form-label-name {
+  color: var(--error-cl);
+}
+
+.form-input:not(:placeholder-shown):required:valid ~ .form-label-name {
+  color: var(--success-cl);
 }
 
 .form-label-comments {
