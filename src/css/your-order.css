@@ -426,7 +426,7 @@
 
 .form-status-error {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   display: block;
   transform: translateY(100%);
 
