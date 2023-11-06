@@ -104,15 +104,61 @@ body {
   border: 1px solid var(--light-cl-10);
   background-color: transparent;
   transition: border-color var(--trans);
+
+  min-width: 168px;
+  height: 50px;
+  position: relative;
+  transition: 0.8s;
 }
 
-.primary-button:hover,
+.primary-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.primary-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--accent-cl);
+  transition: transform 0.8s;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 15px;
+}
+
+.primary-button:hover::after {
+  transition: transform 0.8s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.primary-button:hover {
+  color: var(--secondary-cl);
+  border-color: var(--secondary-cl);
+}
+
 .primary-button:focus {
   border-color: var(--accent-cl);
 }
 
 .primary-button-icon {
   fill: var(--accent-cl);
+}
+
+.primary-button:hover .primary-button-icon {
+  fill: var(--secondary-cl);
 }
 
 @media screen and (min-width: 768px) {
