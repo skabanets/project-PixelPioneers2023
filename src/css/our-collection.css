@@ -5,10 +5,28 @@
   padding-bottom: 40px;
   background-size: 199px 177px;
 }
+/* Use .webp if it is supported */
+@supports (
+  background-image:
+    url('../img/section-our-collection/elements-collection@1x.webp')
+) {
+  .our-collection {
+    background-image: url('../img/section-our-collection/elements-collection@1x.webp');
+  }
+}
 
 @media only screen and (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .our-collection {
     background-image: url('../img/section-our-collection/elements-collection@2x.png');
+  }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image:
+      url('../img/section-our-collection/elements-collection@2x.webp')
+  ) {
+    .our-collection {
+      background-image: url('../img/section-our-collection/elements-collection@2x.webp');
+    }
   }
 }
 
@@ -25,12 +43,30 @@
     background-size: 338px 300px;
     padding-bottom: 50px;
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image:
+      url('../img/section-our-collection/elements-table@1x.webp')
+  ) {
+    .our-collection {
+      background-image: url('../img/section-our-collection/elements-table@1x.webp');
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
   (min-width: 768px) and (min-device-pixel-ratio: 2) {
   .our-collection {
     background-image: url('../img/section-our-collection/elements-table@2x.png');
+  }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image:
+      url('../img/section-our-collection/elements-table@2x.webp')
+  ) {
+    .our-collection {
+      background-image: url('../img/section-our-collection/elements-table@2x.webp');
+    }
   }
 }
 

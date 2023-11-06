@@ -18,11 +18,32 @@
         <source
           media="(min-width: 1280px)"
           srcset="
+            ./img/section-hero/desctop1440-and-1280-hero-girl@1x.webp 1x,
+            ./img/section-hero/desctop1440-and-1280-hero-girl@2x.webp 2x
+          "
+          type="image/webp"
+          width="392"
+          height="545"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
             ./img/section-hero/desctop1440-and-1280-hero-girl@1x.jpg 1x,
             ./img/section-hero/desctop1440-and-1280-hero-girl@2x.jpg 2x
           "
+          type="image/jpg"
           width="392"
           height="545"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/section-hero/girl-tablet-hero@1x.webp 1x,
+            ./img/section-hero/girl-tablet-hero@2x.webp 2x
+          "
+          type="image/webp"
+          width="413"
+          height="575"
         />
         <source
           media="(min-width: 768px)"
@@ -30,6 +51,16 @@
             ./img/section-hero/girl-tablet-hero@1x.jpg 1x,
             ./img/section-hero/girl-tablet-hero@2x.jpg 2x
           "
+          type="image/jpg"
+          width="413"
+          height="575"
+        />
+        <source
+          srcset="
+            ./img/section-hero/girlmobile-hero@1x.webp 1x,
+            ./img/section-hero/girlmobile-hero@2x.webp 2x
+          "
+          type="image/webp"
           width="413"
           height="575"
         />
@@ -53,13 +84,22 @@
         </svg>
         <p class="hero-star-content">all embroidery is made by hand</p>
       </div>
-      <img
-        src="./img/section-hero/hero-img@1x.jpg"
-        srcset="./img/section-hero/hero-img@2x.jpg 2x"
-        alt="embroidered shirt"
-        class="hero-embroidered-shirt"
-        loading="lazy"
-      />
+      <picture>
+        <source
+          srcset="
+            ./img/section-hero/hero-img@1x.webp 1x,
+            ./img/section-hero/hero-img@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          src="./img/section-hero/hero-img@1x.jpg"
+          srcset="./img/section-hero/hero-img@2x.jpg 2x"
+          alt="embroidered shirt"
+          class="hero-embroidered-shirt"
+          loading="lazy"
+        />
+      </picture>
     </div>
   </div>
 </section>
