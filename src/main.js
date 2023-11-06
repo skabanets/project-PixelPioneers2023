@@ -1,18 +1,10 @@
-function scrollToOrder() {
-  // Используем метод scrollIntoView() для прокрутки к секции с id "myFooter"
-  document
-    .getElementById('customer-order')
-    .scrollIntoView({ behavior: 'smooth' });
-}
-
-console.log('Hello');
-
 // sidebar-menu
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const backdrop = document.querySelector('.backdrop');
+  const heroBtn = document.querySelector('.hero-btn');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -28,9 +20,15 @@ console.log('Hello');
     //   : 'enableBodyScroll';
     // bodyScrollLock[scrollLockMethod](document.body);
   };
+  const scrollToOrder = () => {
+    document
+      .getElementById('customer-order')
+      .scrollIntoView({ behavior: 'smooth' });
+  };
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  heroBtn.addEventListener('click', scrollToOrder);
 
   // close-sidebar before folowing link
   mobileMenu.addEventListener('click', e => {
