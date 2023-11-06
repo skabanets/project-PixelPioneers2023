@@ -169,7 +169,7 @@
     height: 484px;
 
     position: absolute;
-    bottom: 0;
+    top: 116px;
     left: -255px;
 
     background-image: url('../img/section-your-order/bg-img-content@1x.png');
@@ -190,6 +190,7 @@
     padding-bottom: 119px;
   }
   .your-order-content-img-container::after {
+    top: 156px;
     left: -320px;
   }
 }
@@ -234,6 +235,8 @@
 .form-label {
   display: block;
   margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .form-input {
@@ -269,6 +272,22 @@
   outline: none;
   border-color: var(--light-cl-60);
 }
+/* Validation */
+.form-input:not(:placeholder-shown):required:invalid {
+  border-color: var(--error-cl);
+}
+.form-input:not(:placeholder-shown):required:valid {
+  border-color: var(--success-cl);
+}
+.form-input:not(:placeholder-shown):required:invalid ~ .form-status-error {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity var(--trans), visibility var(--trans),
+    transform var(--trans);
+
+  position: relative;
+}
 
 .form-label-comments {
   margin-bottom: 40px;
@@ -277,6 +296,19 @@
 .input-comments {
   resize: none;
   height: 196px;
+}
+
+.form-status-error {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  transform: translateY(100%);
+
+  color: var(--error-cl);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--trans), visibility var(--trans);
 }
 
 /* Submit button */

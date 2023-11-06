@@ -17,6 +17,10 @@
             minlength="6"
             maxlength="32"
           />
+          <span class="form-status-error"
+            >Name must contain two words separated by whitespace, each word
+            should have minimum 3 characters. English alphabet characters only.
+          </span>
         </label>
         <label class="form-label">
           <input
@@ -25,10 +29,15 @@
             name="email"
             required
             placeholder="Enter your email"
-            pattern="^[a-zA-Z]\w+@[a-zA-Z0-9]+\.[a-zA-Z]+(\.[a-zA-Z]+)?$"
+            pattern="^[a-zA-Z]\w+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$"
             minlength="6"
             maxlength="64"
           />
+          <span class="form-status-error"
+            >The first character should be an alphabet letter and the Email must
+            contain <b>&commat;</b> and <b>.</b> characters. English alphabet
+            characters only.
+          </span>
         </label>
         <label class="form-label-comments form-label">
           <textarea
