@@ -28,7 +28,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .navigation-pages-list-style {
+  .navigation-pages-list-style{
     display: flex;
     flex-direction: row;
     margin-left: 60px;
@@ -37,8 +37,30 @@
 }
 
 @media only screen and (min-width: 1280px) {
+  .navigation-pages-list-style a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-cl);
+    transition: .3s;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .navigation-pages-list-style a:hover::before,
+  .navigation-pages-list-style a:focus::before {
+    color: var(--accent-cl);
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
   .link-navigation {
     color: var(--primary-cl);
+    position: relative;
     font-size: 14px;
     font-family: Manrope;
     font-weight: 400;
@@ -49,9 +71,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .link-navigation:hover,
-  .link-navigation:focus {
-    color: #ecd979;
+   .link-navigation:hover,
+   .link-navigation:focus{
+    color: var(--accent-cl);
   }
 }
 
