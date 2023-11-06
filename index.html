@@ -27,7 +27,7 @@
     <!-- Custom styles -->
     
     <script type="module" crossorigin src="/project-PixelPioneers2023/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-51535c3b.css">
+    <link rel="stylesheet" href="/project-PixelPioneers2023/assets/index-dbd9b3d4.css">
   </head>
   <body>
     <!-- Header -->
@@ -640,48 +640,58 @@
         approach and quality of service
       </h2>
       <form class="your-order-form" name="your-order-form" autocomplete="off">
-        <label class="form-label">
-          <input
-            class="form-input"
-            type="text"
-            name="full_name"
-            required
-            placeholder="Enter your full name"
-            pattern="^\w{3,} \w{3,}"
-            minlength="6"
-            maxlength="32"
-          />
-          <span class="form-status-error"
-            >Name must contain two words separated by whitespace, each word
-            should have minimum 3 characters. English alphabet characters only.
-          </span>
-        </label>
-        <label class="form-label">
-          <input
-            class="form-input"
-            type="email"
-            name="email"
-            required
-            placeholder="Enter your email"
-            pattern="^[a-zA-Z]\w+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$"
-            minlength="6"
-            maxlength="64"
-          />
-          <span class="form-status-error"
-            >The first character should be an alphabet letter and the Email must
-            contain <b>&commat;</b> and <b>.</b> characters. English alphabet
-            characters only.
-          </span>
-        </label>
-        <label class="form-label-comments form-label">
-          <textarea
-            class="input-comments form-input"
-            name="comments"
-            rows="8"
-            required
-            placeholder="Comments"
-          ></textarea>
-        </label>
+        <div class="form-label-wrap">
+          <label class="form-label">
+            <input
+              class="form-input"
+              type="text"
+              name="full_name"
+              required
+              placeholder=""
+              pattern="^\w{3,} \w{3,}"
+              minlength="6"
+              maxlength="32"
+            />
+            <div class="form-label-name">Enter your full name</div>
+            <span class="form-status-error"
+              >Name must contain two words separated by whitespace, each word
+              should have minimum 3 characters. English alphabet characters
+              only.
+            </span>
+          </label>
+        </div>
+        <div class="form-label-wrap">
+          <label class="form-label">
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              required
+              placeholder=""
+              pattern="^[a-zA-Z]\w+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}(\.[a-zA-Z]{2,})?$"
+              minlength="6"
+              maxlength="64"
+            />
+            <div class="form-label-name">Enter your email</div>
+            <span class="form-status-error"
+              >The first character should be an alphabet letter and the Email
+              must contain <b>&commat;</b> and <b>.</b> characters. English
+              alphabet characters only.
+            </span>
+          </label>
+        </div>
+        <div class="form-label-wrap">
+          <label class="form-label-comments form-label">
+            <textarea
+              class="input-comments form-input"
+              name="comments"
+              rows="8"
+              required
+              placeholder=""
+            ></textarea>
+            <div class="form-label-name">Comments</div>
+          </label>
+        </div>
         <button class="primary-button" type="submit" name="send_order">
           Send<svg class="primary-button-icon" width="24" height="16">
             <use href="/project-PixelPioneers2023/assets/sprite-06e453a2.svg#icon-arrow"></use>
