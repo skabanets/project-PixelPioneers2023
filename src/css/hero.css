@@ -1,6 +1,10 @@
 .hero {
-  padding-top: 113px;
+  padding-top: 132px;
   padding-bottom: 40px;
+}
+
+.hero-content{
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -13,7 +17,8 @@
 }
 
 .hero-btn {
-  margin: 0 0 40px 70px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .hero-images {
@@ -22,7 +27,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 140px;
+    padding-top: 152px;
     padding-bottom: 50px;
   }
   .hero-container {
@@ -65,6 +70,8 @@
     position: absolute;
     bottom: 0;
     clip-path: ellipse(50% 100% at 50% 100%);
+    max-width: 139px;
+    right: 0;
   }
   .hero-main-img {
     border-radius: 4px;
@@ -73,7 +80,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    padding-top: 140px;
+    padding-top: 172px;
     padding-bottom: 75px;
   }
   .hero-container {
