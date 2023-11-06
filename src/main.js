@@ -14,12 +14,8 @@
     mobileMenu.classList.toggle('is-close');
     backdrop.classList.toggle('is-hidden');
     document.body.classList.toggle('scroll-hiden');
-
-    // const scrollLockMethod = !isMenuOpen
-    //   ? 'disableBodyScroll'
-    //   : 'enableBodyScroll';
-    // bodyScrollLock[scrollLockMethod](document.body);
   };
+
   const scrollToOrder = () => {
     document
       .getElementById('customer-order')
@@ -40,9 +36,7 @@
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-    backdrop.classList.toggle('is-hidden');
+    backdrop.classList.add('is-hidden');
   });
 })();

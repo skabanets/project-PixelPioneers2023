@@ -105,16 +105,19 @@ body {
   background-color: transparent;
   transition: border-color var(--trans);
 }
+
 .primary-button:hover,
 .primary-button:focus {
   border-color: var(--accent-cl);
 }
+
 .primary-button-icon {
   fill: var(--accent-cl);
 }
 
 @media screen and (min-width: 768px) {
   .primary-button {
+    font-size: 16px;
     display: flex;
     padding: 14px 39px;
   }
