@@ -9,9 +9,25 @@
   background-size: 459px 408px;
 }
 
+/* Use .webp if it is supported */
+@supports (
+  background-image: url(../img/section-about-us/elements-mobile@1x.webp)
+) {
+  .about-section {
+    background-image: url(../img/section-about-us/elements-mobile@1x.webp);
+  }
+}
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .about-section {
     background-image: url(../img/section-about-us/elements-mobile@2x.png);
+  }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/section-about-us/elements-mobile@2x.webp)
+  ) {
+    .about-section {
+      background-image: url(../img/section-about-us/elements-mobile@2x.webp);
+    }
   }
 }
 
@@ -23,9 +39,25 @@
     background-size: 545px 484px;
   }
 
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/section-about-us/elements-tablet@1x.webp)
+  ) {
+    .about-section {
+      background-image: url(../img/section-about-us/elements-tablet@1x.webp);
+    }
+  }
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .about-section {
       background-image: url(../img/section-about-us/elements-tablet@2x.png);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image: url(../img/section-about-us/elements-tablet@2x.webp)
+    ) {
+      .about-section {
+        background-image: url(../img/section-about-us/elements-tablet@2x.webp);
+      }
     }
   }
 }
@@ -36,10 +68,26 @@
     background-image: url(../img/section-about-us/elements-desktop-1@1x.png);
     background-position: left calc(50% + 527.5px) bottom 80px;
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/section-about-us/elements-desktop-1@1x.webp)
+  ) {
+    .about-section {
+      background-image: url(../img/section-about-us/elements-desktop-1@1x.webp);
+    }
+  }
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .about-section {
       background-image: url(../img/section-about-us/elements-desktop-1@2x.png);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image: url(../img/section-about-us/elements-desktop-1@2x.webp)
+    ) {
+      .about-section {
+        background-image: url(../img/section-about-us/elements-desktop-1@2x.webp);
+      }
     }
   }
 }
@@ -49,10 +97,26 @@
     background-image: url(../img/section-about-us/elements-desktop-2@1x.png);
     background-position: left calc(50% + 447.5px) bottom 80px;
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/section-about-us/elements-desktop-2@1x.webp)
+  ) {
+    .about-section {
+      background-image: url(../img/section-about-us/elements-desktop-2@1x.webp);
+    }
+  }
 
   @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .about-section {
       background-image: url(../img/section-about-us/elements-desktop-2@2x.png);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image: url(../img/section-about-us/elements-desktop-2@2x.webp)
+    ) {
+      .about-section {
+        background-image: url(../img/section-about-us/elements-desktop-2@2x.webp);
+      }
     }
   }
 }
@@ -93,7 +157,7 @@
   }
 }
 
-.first-p{
+.first-p {
   margin-bottom: 20px;
 }
 

@@ -128,11 +128,27 @@
   height: 252px;
   background-size: cover;
 }
+/* Use .webp if it is supported */
+@supports (
+  background-image: url(../img/sidebar-menu/menu-ornament_mob@1x.webp)
+) {
+  .sidebar-ornament {
+    background-image: url(../img/sidebar-menu/menu-ornament_mob@1x.webp);
+  }
+}
 
 @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .sidebar-ornament {
     background-image: url(../img/sidebar-menu/menu-ornament_mob@2x.png);
+  }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/sidebar-menu/menu-ornament_mob@2x.webp)
+  ) {
+    .sidebar-ornament {
+      background-image: url(../img/sidebar-menu/menu-ornament_mob@2x.webp);
+    }
   }
 }
 
@@ -141,11 +157,27 @@
     background-image: url(../img/sidebar-menu/menu-ornament_tab@1x.png);
     height: 364px;
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/sidebar-menu/menu-ornament_tab@1x.webp)
+  ) {
+    .sidebar-ornament {
+      background-image: url(../img/sidebar-menu/menu-ornament_tab@1x.webp);
+    }
+  }
 }
 
 @media only screen and (min-width: 767px) and (min-device-pixel-ratio: 2),
   (min-width: 767px) and (min-resolution: 192dpi) {
   .sidebar-ornament {
     background-image: url(../img/sidebar-menu/menu-ornament_tab@2x.png);
+  }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url(../img/sidebar-menu/menu-ornament_tab@2x.webp)
+  ) {
+    .sidebar-ornament {
+      background-image: url(../img/sidebar-menu/menu-ornament_tab@2x.webp);
+    }
   }
 }

@@ -6,11 +6,23 @@
   background-size: 452px 401px;
   border-top: 1px solid rgba(252, 249, 249, 0.1);
 }
+/* Use .webp if it is supported */
+@supports (background-image: url(../img/section-footer/ornament@1x.webp)) {
+  .footer {
+    background-image: url(../img/section-footer/ornament@1x.webp);
+  }
+}
 
 @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   (max-width: 767px) and (min-resolution: 192dpi) {
   .footer {
     background-image: url(../img/section-footer/ornament@2x.png);
+  }
+  /* Use .webp if it is supported */
+  @supports (background-image: url(../img/section-footer/ornament@2x.webp)) {
+    .footer {
+      background-image: url(../img/section-footer/ornament@2x.webp);
+    }
   }
 }
 
@@ -27,12 +39,24 @@
   .footer {
     background-image: url(../img/section-footer/ornament@1x.png);
   }
+  /* Use .webp if it is supported */
+  @supports (background-image: url(../img/section-footer/ornament@1x.webp)) {
+    .footer {
+      background-image: url(../img/section-footer/ornament@1x.webp);
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
   (min-width: 768px) and (min-resolution: 192dpi) {
   .footer {
     background-image: url(../img/section-footer/ornament@2x.png);
+  }
+  /* Use .webp if it is supported */
+  @supports (background-image: url(../img/section-footer/ornament@2x.webp)) {
+    .footer {
+      background-image: url(../img/section-footer/ornament@2x.webp);
+    }
   }
 }
 

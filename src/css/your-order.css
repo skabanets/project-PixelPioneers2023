@@ -46,9 +46,25 @@
   .your-order-section::before {
     background-image: url('../img/section-your-order/bg-img-mobile@1x.jpg');
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url('../img/section-your-order/bg-img-mobile@1x.webp')
+  ) {
+    .your-order-section::before {
+      background-image: url('../img/section-your-order/bg-img-mobile@1x.webp');
+    }
+  }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
       background-image: url('../img/section-your-order/bg-img-mobile@2x.jpg');
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image: url('../img/section-your-order/bg-img-mobile@2x.webp')
+    ) {
+      .your-order-section::before {
+        background-image: url('../img/section-your-order/bg-img-mobile@2x.webp');
+      }
     }
   }
 }
@@ -60,11 +76,30 @@
     margin-bottom: 100px;
     background-image: url('../img/section-your-order/bg-transp-image-tablet@1x.png'),
       linear-gradient(170deg, #ccd1cd, #eaeeef);
+    /* Use .webp if it is supported */
+    @supports (
+      background-image:
+        url('../img/section-your-order/bg-transp-image-tablet@1x.webp')
+    ) {
+      .your-order-section::before {
+        background-image: url('../img/section-your-order/bg-transp-image-tablet@1x.webp');
+      }
+    }
   }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
       background-image: url('../img/section-your-order/bg-transp-image-tablet@2x.png'),
         linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image:
+        url('../img/section-your-order/bg-transp-image-tablet@2x.webp')
+    ) {
+      .your-order-section::before {
+        background-image: url('../img/section-your-order/bg-transp-image-tablet@2x.webp'),
+          linear-gradient(170deg, #ccd1cd, #eaeeef);
+      }
     }
   }
 }
@@ -76,10 +111,30 @@
     background-image: url('../img/section-your-order/bg-transp-image-desk1280@1x.png'),
       linear-gradient(170deg, #ccd1cd, #eaeeef);
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image:
+      url('../img/section-your-order/bg-transp-image-desk1280@1x.webp')
+  ) {
+    .your-order-section::before {
+      background-image: url('../img/section-your-order/bg-transp-image-desk1280@1x.webp'),
+        linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+  }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
       background-image: url('../img/section-your-order/bg-transp-image-desk1280@2x.png'),
         linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image:
+        url('../img/section-your-order/bg-transp-image-desk1280@2x.webp')
+    ) {
+      .your-order-section::before {
+        background-image: url('../img/section-your-order/bg-transp-image-desk1280@2x.webp'),
+          linear-gradient(170deg, #ccd1cd, #eaeeef);
+      }
     }
   }
 }
@@ -90,10 +145,30 @@
     background-image: url('../img/section-your-order/bg-transp-image-desk1440@1x.png'),
       linear-gradient(170deg, #ccd1cd, #eaeeef);
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image:
+      url('../img/section-your-order/bg-transp-image-desk1280@2x.webp')
+  ) {
+    .your-order-section::before {
+      background-image: url('../img/section-your-order/bg-transp-image-desk1280@2x.webp'),
+        linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+  }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-section::before {
       background-image: url('../img/section-your-order/bg-transp-image-desk1440@2x.png'),
         linear-gradient(170deg, #ccd1cd, #eaeeef);
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image:
+        url('../img/section-your-order/bg-transp-image-desk1280@2x.webp')
+    ) {
+      .your-order-section::before {
+        background-image: url('../img/section-your-order/bg-transp-image-desk1440@2x.webp'),
+          linear-gradient(170deg, #ccd1cd, #eaeeef);
+      }
     }
   }
 }
@@ -176,9 +251,25 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
+  /* Use .webp if it is supported */
+  @supports (
+    background-image: url('../img/section-your-order/bg-img-content@1x.webp')
+  ) {
+    .your-order-content-img-container::after {
+      background-image: url('../img/section-your-order/bg-img-content@1x.webp');
+    }
+  }
   @media only screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .your-order-content-img-container::after {
       background-image: url('../img/section-your-order/bg-img-content@2x.png');
+    }
+    /* Use .webp if it is supported */
+    @supports (
+      background-image: url('../img/section-your-order/bg-img-content@2x.webp')
+    ) {
+      .your-order-content-img-container::after {
+        background-image: url('../img/section-your-order/bg-img-content@2x.webp');
+      }
     }
   }
 }
