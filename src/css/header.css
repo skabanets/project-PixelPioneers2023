@@ -109,17 +109,17 @@
     text-transform: uppercase;
     font-style: normal;
     line-height: 1.42;
-    padding: 14px 28px 14px 28px;
+    padding: 14px 28px;
     border-radius: 15px;
-    border: 1px rgba(252, 249, 249, 0.1) solid;
+    border: 1px solid var(--light-cl-10);
     transition: border-color var(--trans);
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .number-style:hover,
-  .number-style:focus {
-    border-color: #ecd979;
+  .number-style:focus,
+  .number-style:hover {
+    border-color: var(--accent-cl);
   }
 }
 
