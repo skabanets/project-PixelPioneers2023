@@ -19,6 +19,52 @@
 .hero-btn {
   display: flex;
   margin: 0 auto;
+  min-width: 168px;
+  height: 50px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.hero-btn:hover {
+  color: var(--secondary-cl);
+  border-color: var(--secondary-cl);
+}
+
+.hero-btn:hover .primary-button-icon {
+  fill: var(--secondary-cl);
+}
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.hero-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--accent-cl);
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  border-radius: 15px;
+}
+
+.hero-btn:hover::after {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .hero-images {
