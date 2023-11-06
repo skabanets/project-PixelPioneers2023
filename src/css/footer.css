@@ -74,6 +74,23 @@
   gap: 25px;
 }
 
+.footer-menu a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-cl);
+  transition: .3s;
+}
+
+.footer-menu a:hover::before,
+.footer-menu a:focus::before{
+  color: var(--accent-cl);
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .footer-menu {
     flex-direction: row;
@@ -92,6 +109,7 @@
 
 .footer-link {
   color: var(--primary-cl);
+  position: relative;
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
