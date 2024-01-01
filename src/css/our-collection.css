@@ -141,11 +141,19 @@
     overflow: hidden;
     display: block;
     width: 100%;
+    cursor: pointer;
   }
+
   .collection-ill {
     width: 347px;
     height: 430px;
+    transition: transform (--trans);
   }
+
+  .collection-ill:hover {
+    transform: scale(1.2);
+  }
+
   .collection-img-btn {
     display: block;
     position: absolute;
