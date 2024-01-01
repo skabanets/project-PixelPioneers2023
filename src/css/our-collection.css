@@ -141,10 +141,16 @@
     overflow: hidden;
     display: block;
     width: 100%;
+    cursor: pointer;
   }
+
   .collection-ill {
     width: 347px;
     height: 430px;
+  }
+
+  .collection-ill:hover {
+    transform: scale(1.2);
   }
   .collection-img-btn {
     display: block;
